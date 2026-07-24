@@ -26,7 +26,7 @@ public class OtherSdkManager : MonoBehaviour
 
     private void AdjustInit()
     {
-        string adjust_AppToken = "cgxrt57p00e8";
+        string adjust_AppToken = "x8i8rk60u41s";
         AdjustConfig adjustConfig = new AdjustConfig(adjust_AppToken, AdjustEnvironment.Production);
         // ...
         Adjust.InitSdk(adjustConfig);
@@ -34,7 +34,7 @@ public class OtherSdkManager : MonoBehaviour
 
     private void SolarEngineInit()
     {
-        string AppKey = "abfb896423afdd36";
+        string AppKey = "65917ddcfdf8d4e2";
         SEConfig seConfig = new SEConfig();
         SolarEngine.Analytics.initSeSdk(AppKey, seConfig);
     }

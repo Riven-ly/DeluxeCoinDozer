@@ -1,8 +1,6 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Reflection.Emit;
 using UnityEngine;
 
 public class GoldCollectEffect : MonoBehaviour

@@ -521,6 +521,14 @@
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.6\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="SolarEngineUnityTool">
+      <HintPath>Assets\Plugins\SolarEngine\MiniGame\SolarEngineUnityTool.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SolarEngineMiniGames">
+      <HintPath>Assets\Plugins\SolarEngine\MiniGame\SolarEngineMiniGames.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
       <Private>False</Private>
@@ -535,14 +543,6 @@
     </Reference>
     <Reference Include="MiniGameRemoteConfig">
       <HintPath>Assets\Plugins\SolarEngine\MiniGame\MiniGameRemoteConfig.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="SolarEngineMiniGames">
-      <HintPath>Assets\Plugins\SolarEngine\MiniGame\SolarEngineMiniGames.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="SolarEngineUnityTool">
-      <HintPath>Assets\Plugins\SolarEngine\MiniGame\SolarEngineUnityTool.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="solarenginewindows">

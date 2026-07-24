@@ -37,7 +37,7 @@ public class GoldFlyControl : MonoBehaviour
                 .SetEase(Ease.OutCubic)//OutCubic
                 .OnComplete(() =>
                 {
-                    source.Play();
+                    //source.Play();
                     icon.gameObject.SetActive(false);
                     //particleSystemObj.gameObject.SetActive(true);
                     //particleSystemObj.Play();

@@ -31,7 +31,9 @@ public class TxElementTypeSelectPanel : UIBase
                 index = _index;
                 UpdateselectBtnIconPos();
             });
+            buttons[_index].interactable = false;
         }
+        buttons[0].interactable = true;
 
         hideBtn.onClick.AddListener(() =>
         {

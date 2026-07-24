@@ -1,5 +1,5 @@
-//using AdjustSdk;
-//using SolarEngine;
+using AdjustSdk;
+using SolarEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,16 +26,16 @@ public class OtherSdkManager : MonoBehaviour
 
     private void AdjustInit()
     {
-        //string adjust_AppToken = "cgxrt57p00e8";
-        //AdjustConfig adjustConfig = new AdjustConfig(adjust_AppToken, AdjustEnvironment.Production);
-        //// ...
-        //Adjust.InitSdk(adjustConfig);
+        string adjust_AppToken = "cgxrt57p00e8";
+        AdjustConfig adjustConfig = new AdjustConfig(adjust_AppToken, AdjustEnvironment.Production);
+        // ...
+        Adjust.InitSdk(adjustConfig);
     }
 
     private void SolarEngineInit()
     {
-       // string AppKey = "abfb896423afdd36";
-       // SEConfig seConfig = new SEConfig();
-       // SolarEngine.Analytics.initSeSdk(AppKey, seConfig);
+        string AppKey = "abfb896423afdd36";
+        SEConfig seConfig = new SEConfig();
+        SolarEngine.Analytics.initSeSdk(AppKey, seConfig);
     }
 }

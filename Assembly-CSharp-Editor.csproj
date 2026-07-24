@@ -64,13 +64,31 @@
     <Compile Include="Assets\Editor\CustomToolEditor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\SolarEngineNet\SolarEnginePlugins\ODMInfo\Editor\Dependencies.xml" />
+    <None Include="Assets\SolarEngineNet\iOS\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\Mintegral\Editor\Dependencies.xml" />
     <None Include="Assets\ExternalDependencyManager\Editor\1.2.186\Google.IOSResolver.dll" />
+    <None Include="Assets\MaxSdk\Mediation\Chartboost\Editor\Dependencies.xml" />
     <None Include="Assets\MaxSdk\AppLovin\Editor\Dependencies.xml" />
+    <None Include="Assets\Adjust\Native\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\Google\Editor\Dependencies.xml" />
+    <None Include="Assets\SolarEngineNet\SolarEnginePlugins\Oaid\Editor\Dependencies.xml" />
     <None Include="Assets\ExternalDependencyManager\Editor\Google.VersionHandler.dll" />
+    <None Include="Assets\MaxSdk\Mediation\ByteDance\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\BidMachine\Editor\Dependencies.xml" />
     <None Include="Assets\ExternalDependencyManager\Editor\1.2.186\Google.PackageManagerResolver.dll" />
+    <None Include="Assets\MaxSdk\Mediation\IronSource\Editor\Dependencies.xml" />
     <None Include="Assets\ExternalDependencyManager\Editor\1.2.186\Google.VersionHandlerImpl.dll" />
+    <None Include="Assets\MaxSdk\Mediation\UnityAds\Editor\Dependencies.xml" />
     <None Include="Assets\ExternalDependencyManager\Editor\external-dependency-manager_version-1.2.186_manifest.txt" />
+    <None Include="Assets\SolarEngineNet\Android\Editor\Dependencies.xml" />
     <None Include="Assets\ExternalDependencyManager\Editor\1.2.186\Google.JarResolver.dll" />
+    <None Include="Assets\MaxSdk\Mediation\BigoAds\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\InMobi\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\Vungle\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\Fyber\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\Facebook\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\Moloco\Editor\Dependencies.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -491,6 +509,22 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MiniGameRemoteConfig">
+      <HintPath>Assets\Plugins\SolarEngine\MiniGame\MiniGameRemoteConfig.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SolarEngineMiniGames">
+      <HintPath>Assets\Plugins\SolarEngine\MiniGame\SolarEngineMiniGames.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SolarEngineUnityTool">
+      <HintPath>Assets\Plugins\SolarEngine\MiniGame\SolarEngineUnityTool.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="solarenginewindows">
+      <HintPath>Assets\Plugins\SolarEngine\Windows\solarenginewindows.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
@@ -1017,12 +1051,60 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline">
@@ -1031,10 +1113,6 @@
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
@@ -1061,36 +1139,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Settings.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Settings.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
@@ -1099,22 +1149,6 @@
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -1127,21 +1161,13 @@
       <Project>{340B7444-4D9F-1473-396D-2C4E5C68BC1A}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="StompyRobot.SRDebugger.Editor.csproj">
-      <Project>{F12CE120-7ABD-7FED-44D3-53D06E6FE8BE}</Project>
-      <Name>StompyRobot.SRDebugger.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MaxSdk.Scripts.IntegrationManager.Editor.csproj">
-      <Project>{D61227B1-5393-4F84-C642-B9F637327030}</Project>
-      <Name>MaxSdk.Scripts.IntegrationManager.Editor</Name>
+    <ProjectReference Include="AdjustSdk.Editor.csproj">
+      <Project>{0057129C-0230-9B5C-07FF-61B567B73B33}</Project>
+      <Name>AdjustSdk.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="StompyRobot.SRF.Editor.csproj">
       <Project>{57A024EC-E0F1-78A7-4B4C-59B6B79AD1AB}</Project>
       <Name>StompyRobot.SRF.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MaxSdk.Scripts.csproj">
-      <Project>{6F6B3E38-D8CD-FACF-811B-D61D047C0E0D}</Project>
-      <Name>MaxSdk.Scripts</Name>
     </ProjectReference>
     <ProjectReference Include="StompyRobot.SRF.csproj">
       <Project>{5DF447B3-177F-796A-D3B2-517A3970B02F}</Project>
@@ -1150,6 +1176,30 @@
     <ProjectReference Include="StompyRobot.SRDebugger.csproj">
       <Project>{88F68F41-51AB-02F1-072A-0CB09825BE57}</Project>
       <Name>StompyRobot.SRDebugger</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRDebugger.Editor.csproj">
+      <Project>{F12CE120-7ABD-7FED-44D3-53D06E6FE8BE}</Project>
+      <Name>StompyRobot.SRDebugger.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SolarEngineSDK.Editor.csproj">
+      <Project>{B1447ED7-0264-BDCD-EB27-D1D5C7384BA0}</Project>
+      <Name>SolarEngineSDK.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MaxSdk.Scripts.IntegrationManager.Editor.csproj">
+      <Project>{D61227B1-5393-4F84-C642-B9F637327030}</Project>
+      <Name>MaxSdk.Scripts.IntegrationManager.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SolarEngineSDK.csproj">
+      <Project>{ACF065A4-D123-FFA2-56CE-55DB1014B86A}</Project>
+      <Name>SolarEngineSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="MaxSdk.Scripts.csproj">
+      <Project>{6F6B3E38-D8CD-FACF-811B-D61D047C0E0D}</Project>
+      <Name>MaxSdk.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="AdjustSdk.Scripts.csproj">
+      <Project>{D5314124-5C51-1775-0C3A-A9F189AE23CD}</Project>
+      <Name>AdjustSdk.Scripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

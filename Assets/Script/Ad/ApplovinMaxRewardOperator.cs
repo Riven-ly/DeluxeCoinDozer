@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AdjustSdk;
+using SolarEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -158,6 +160,16 @@ public class ApplovinMaxRewardOperator : MonoBehaviour
             return;
         }
         Debug.Log("激励视频点击");
+        if (!OtherSdkManager.IsInit)
+        {
+            return;
+        }
+        AdClickAttributes AdClickAttributes = new AdClickAttributes();
+        AdClickAttributes.ad_platform = adInfo.NetworkName;
+        AdClickAttributes.mediation_platform = "max";
+        AdClickAttributes.ad_id = adInfo.AdUnitIdentifier;
+        AdClickAttributes.ad_type = 1;
+        SolarEngine.Analytics.trackAdClick(AdClickAttributes);
     }
 
     private void OnRewardedAdHiddenEvent(string adUnitId, MaxSdk.AdInfo adInfo)
@@ -215,7 +227,27 @@ public class ApplovinMaxRewardOperator : MonoBehaviour
     //广告成功展示且产生有效收益
     private void OnRewardedAdRevenuePaidEvent(MaxSdk.AdInfo adInfo)
     {
-
         // Ad revenue paid. Use this callback to track user revenue.
+        if (!OtherSdkManager.IsInit)
+        {
+            return;
+        }
+        //----------------Adjust------------------------------
+        var adRevenue = new AdjustAdRevenue("applovin_max_sdk");
+        adRevenue.SetRevenue(adInfo.Revenue, "USD");
+        adRevenue.AdRevenueNetwork = adInfo.NetworkName;
+        adRevenue.AdRevenueUnit = adInfo.AdUnitIdentifier;
+        adRevenue.AdRevenuePlacement = adInfo.Placement;
+        Adjust.TrackAdRevenue(adRevenue);
+        //----------------热力---------------------------
+        ImpressionAttributes impressionAttributes = new ImpressionAttributes();
+        impressionAttributes.ad_platform = adInfo.NetworkName;
+        impressionAttributes.ad_id = adInfo.AdUnitIdentifier;
+        impressionAttributes.ad_type = 1;
+        impressionAttributes.ad_ecpm = adInfo.Revenue * 1000;
+        impressionAttributes.currency_type = "USD";
+        impressionAttributes.mediation_platform = "max";//填入您所使用的聚合平台
+        impressionAttributes.is_rendered = true;
+        SolarEngine.Analytics.trackAdImpression(impressionAttributes);
     }
 }

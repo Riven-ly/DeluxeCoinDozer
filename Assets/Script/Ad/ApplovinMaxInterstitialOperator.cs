@@ -1,3 +1,5 @@
+using AdjustSdk;
+using SolarEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -177,6 +179,16 @@ public class ApplovinMaxInterstitialOperator : MonoBehaviour
     private void OnInterstitialClickedEvent(string adUnitId, MaxSdk.AdInfo adInfo) 
     {
         Debug.Log("插屏广告被点击");
+        if (!OtherSdkManager.IsInit)
+        {
+            return;
+        }
+        AdClickAttributes AdClickAttributes = new AdClickAttributes();
+        AdClickAttributes.ad_platform = adInfo.NetworkName;
+        AdClickAttributes.mediation_platform = "max";
+        AdClickAttributes.ad_id = adInfo.AdUnitIdentifier;
+        AdClickAttributes.ad_type = 3;
+        SolarEngine.Analytics.trackAdClick(AdClickAttributes);
     }
 
     private void OnInterstitialHiddenEvent(string adUnitId, MaxSdk.AdInfo adInfo)
@@ -195,7 +207,27 @@ public class ApplovinMaxInterstitialOperator : MonoBehaviour
     //广告成功展示且产生有效收益
     private void OnInterstitialAdRevenuePaidEvent(MaxSdk.AdInfo adInfo)
     {
-		
         // Ad revenue paid. Use this callback to track user revenue.
+        if (!OtherSdkManager.IsInit)
+        {
+            return;
+        }
+        //----------------Adjust------------------------------
+        var adRevenue = new AdjustAdRevenue("applovin_max_sdk");
+        adRevenue.SetRevenue(adInfo.Revenue, "USD");
+        adRevenue.AdRevenueNetwork = adInfo.NetworkName;
+        adRevenue.AdRevenueUnit = adInfo.AdUnitIdentifier;
+        adRevenue.AdRevenuePlacement = adInfo.Placement;
+        Adjust.TrackAdRevenue(adRevenue);
+        //----------------热力---------------------------
+        ImpressionAttributes impressionAttributes = new ImpressionAttributes();
+        impressionAttributes.ad_platform = adInfo.NetworkName;
+        impressionAttributes.ad_id = adInfo.AdUnitIdentifier;
+        impressionAttributes.ad_type = 3;
+        impressionAttributes.ad_ecpm = adInfo.Revenue * 1000;
+        impressionAttributes.currency_type = "USD";
+        impressionAttributes.mediation_platform = "max";//填入您所使用的聚合平台
+        impressionAttributes.is_rendered = true;
+        SolarEngine.Analytics.trackAdImpression(impressionAttributes);
     }
 }

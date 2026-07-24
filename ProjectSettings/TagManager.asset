@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - UICamera
+  - MachineClickTrigger
+  - MachineItem
+  - GashaponMachineBox
+  - DropGamePanelItem
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - MachineClick
+  - GashaponMachine1
+  - GashaponMachine2
+  - GashaponMachine3
+  - GashaponMachine4
+  - GashaponMachine5
+  - GashaponMachine6
+  - GoldLight
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Layer1
+    uniqueID: 2957361943
+    locked: 0
+  - name: Layer2
+    uniqueID: 2917905063
+    locked: 0
+  - name: Layer3
+    uniqueID: 1143331557
+    locked: 0
+  - name: Layer4
+    uniqueID: 1164684877
+    locked: 0
+  - name: Layer5
+    uniqueID: 1343402659
+    locked: 0
+  - name: Layer6
+    uniqueID: 3537941659
+    locked: 0
+  - name: Layer7
+    uniqueID: 3810625141
+    locked: 0

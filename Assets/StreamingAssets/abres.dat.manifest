@@ -1,0 +1,348 @@
+ManifestFileVersion: 0
+CRC: 154706975
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 82a84d1708b273017d5f73950793b76f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 11cc61127293df94097c8bcf385b23f5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 82a84d1708b273017d5f73950793b76f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4320f4720b18b634e9a11d66bd8ca8a4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 61dfeb8a70a32a344a2bae461ab9c1dc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 29b34b5dee8458c40b82b2c5467f6d41, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bbb75c4d94119054687f4061136c5f64, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cb2f04f6365d5a4fb1c51cb0aefd65a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d20ed80a6b7cf824abd201e61b242278, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 70511f68a9a94434092a311700e6204f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3d6f06a2f0d876d43a5db622808a4300, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59662d8abeb427943b67f56d904a0803, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cd6263878e350d14681234183b78826e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9351efe9a3f400842b9f8648373b25c0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4c08119143da0404599a68d4dd91cdd0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8105bafc969525945a9056c4eae9fbdc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bcf255b0bcb076a42b2c3d1c5b6fba68, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7ce72a5400777e54eb257da47b72ac9c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3537817a48482894caffc5b76db71c8d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4df5bb9747034b8429efb121e2f8736f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a2dda82b003009c419f60b3c03fba09a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 55102b3c51ab9904b95a7635ce53d572, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca172b1b9ee7cb843a193c935893b1b0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 91e6f3218f6bbe04b81a17c0eafe53cd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f1a5ef26c16ff2c478697335a8eac253, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d7cf71a2bbbf1b347a7ee00ce079b117, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7fa9f70efd14b9b4cae362d646b03972, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ebea7e0ac85df084491124f72a08ea73, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b6e2eab379848894abca910093654696, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c7bd885ad8d2c9e438072120cfc4100e, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 134
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: ItemFragmentSpriteInfo
+- AssemblyName: Assembly-CSharp
+  ClassName: MultilingualSpriteInfo
+- AssemblyName: Assembly-CSharp
+  ClassName: ObjectPrefabInfo
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.RectOffset
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Button/ButtonClickedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.InputField/EndEditEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.InputField/OnChangeEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.InputField/SubmitEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ScrollRect/ScrollRectEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Slider/SliderEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
+Assets:
+- Assets/ABRes/TxElement/Texture/main/beijing.png
+- Assets/ABRes/TxElement/Texture/main/dangqian-di2.png
+- Assets/ABRes/ABResManager/Texture/gaizi.png
+- Assets/ABRes/TxElement/Prefab/FlickerEffectAnim.anim
+- Assets/ABRes/ItemFragment/Prefab/ItemFragment.prefab
+- Assets/ABRes/TxElement/Texture/type/8.png
+- Assets/ABRes/ItemFragment/Texture/Shard-yn.png
+- Assets/ABRes/TxElement/Texture/finalStep/l.png
+- Assets/ABRes/DifficultMachine/Texture/x.png
+- Assets/ABRes/TxElement/Texture/finalStep/tanchuang.png
+- Assets/ABRes/TxElement/Texture/TypeSelectPanel/tanchuang.png
+- Assets/ABRes/ItemFragment/Texture/duihuan.png
+- Assets/ABRes/DifficultMachine/Prefab/DifficultMachineGameLosePanel.prefab
+- Assets/ABRes/TxElement/Texture/jinduPanel/yuan.png
+- Assets/ABRes/TxElement/Texture/yindao/tubiao4.png
+- Assets/ABRes/TxElement/Texture/type/7.png
+- Assets/ABRes/ABResManager/Model/Quest3/hmd.png
+- Assets/ABRes/ABResManager/Model/NS/NS 1.mat
+- Assets/ABRes/ABResManager/Model/ps5/xbox362.mat
+- Assets/ABRes/ABResManager/Texture/hongjiaobiao.png
+- Assets/ABRes/DifficultMachine/Texture/kunnanmoshi.png
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/Lose-huangguan.png
+- Assets/ABRes/TxElement/Texture/main/anniu-xiao.png
+- Assets/ABRes/TxElement/Texture/main/yonghu.png
+- Assets/ABRes/TxElement/Prefab/TxElementHistoryPanel.prefab
+- Assets/ABRes/ABResManager/ABResManager.prefab
+- Assets/ABRes/ABResManager/Model/ps5/ps4untitled.mat
+- Assets/ABRes/ABResManager/Prefab/SpecialFragment_5.prefab
+- Assets/ABRes/ItemFragment/Texture/anniu.png
+- Assets/ABRes/TxElement/Texture/finalStep/a.png
+- Assets/ABRes/ItemFragment/Texture/Quest3.png
+- Assets/ABRes/TxElement/Texture/TypeSelectPanel/didididi.png
+- Assets/ABRes/ABResManager/Model/ps5/ps5-2.fbx
+- Assets/ABRes/TxElement/Texture/type/1.png
+- Assets/ABRes/ABResManager/Model/Quest3/HMD.fbx
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/Congrats! 1.png
+- Assets/ABRes/DifficultMachine/Prefab/DifficultMachineEnter.prefab
+- Assets/ABRes/ItemFragment/Texture/suipian.png
+- Assets/ABRes/TxElement/Texture/guang2.png
+- Assets/ABRes/TxElement/Texture/TypeSelectPanel/anniu-lan.png
+- Assets/ABRes/ItemFragment/Texture/jindutiao.png
+- Assets/ABRes/ABResManager/Prefab/Special_Diamond.prefab
+- Assets/ABRes/ItemFragment/Texture/Email.png
+- Assets/ABRes/ABResManager/Texture/diamond.png
+- Assets/ABRes/DifficultMachine/Texture/tanchuang.png
+- Assets/ABRes/TxElement/Texture/History/lishijilu-di.png
+- Assets/ABRes/ItemFragment/Texture/!.png
+- Assets/ABRes/TxElement/Texture/type/5.png
+- Assets/ABRes/TxElement/Texture/History/fanhui.png
+- Assets/ABRes/TxElement/Texture/finalStep/e.png
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/guang-hui.png
+- Assets/ABRes/ItemFragment/Texture/biaoti.png
+- Assets/ABRes/TxElement/Prefab/TxElementPanel.prefab
+- Assets/ABRes/ItemFragment/Texture/di.png
+- Assets/ABRes/TxElement/Texture/main/dangqian-di1.png
+- Assets/ABRes/ItemFragment/Texture/yuandi.png
+- Assets/ABRes/DifficultMachine/Texture/chaopiao.png
+- Assets/ABRes/TxElement/Prefab/TxElementFinalStepPanel.prefab
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/x.png
+- Assets/ABRes/TxElement/Texture/yindao/yuandi.png
+- Assets/ABRes/ABResManager/Model/sanxing/flip.fbx
+- Assets/ABRes/ItemFragment/Texture/beijing.png
+- Assets/ABRes/TxElement/Texture/TypeSelectPanel/anniu-lv.png
+- Assets/ABRes/TxElement/Texture/TypeSelectPanel/cuowu-di.png
+- Assets/ABRes/ABResManager/Model/erji/Material_SimpleHeadphones.mat
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/Congrats!-yn.png
+- Assets/ABRes/ABResManager/Prefab/SpecialFragment_4.prefab
+- Assets/ABRes/TxElement/Prefab/TxElementHistoryCell.prefab
+- Assets/ABRes/ABResManager/Model/sanxing/B_.mat
+- Assets/ABRes/ABResManager/Prefab/SpecialFragment_3.prefab
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/jindutiao.png
+- Assets/ABRes/ItemFragment/Texture/Shard.png
+- Assets/ABRes/ABResManager/Model/NS/Switch_RB.prefab
+- Assets/ABRes/TxElement/Texture/finalStep/r.png
+- Assets/ABRes/TxElement/Texture/finalStep/yingbi-hui.png
+- Assets/ABRes/TxElement/Texture/type/2.png
+- Assets/ABRes/DifficultMachine/Prefab/DifficultMachineEnterPanel.prefab
+- Assets/ABRes/TxElement/Texture/main/anniu-zhong.png
+- Assets/ABRes/ItemFragment/Prefab/ItemFragmentTipsPanel.prefab
+- Assets/ABRes/TxElement/Prefab/TxElementBtn.prefab
+- Assets/ABRes/ABResManager/Model/NS/Switch_Controller_RedBlue.png
+- Assets/ABRes/ABResManager/Model/erji/SimpleHeadphones.prefab
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/Lose-yn.png
+- Assets/ABRes/DifficultMachine/Texture/jinbidui.png
+- Assets/ABRes/TxElement/Texture/jinduPanel/tanchuang.png
+- Assets/ABRes/TxElement/Texture/TypeSelectPanel/huidi.png
+- Assets/ABRes/TxElement/Texture/20260312-165316.png
+- Assets/ABRes/ABResManager/Texture/zi-di2.png
+- Assets/ABRes/TxElement/Texture/main/anniu-da.png
+- Assets/ABRes/DifficultMachine/Texture/anniu-lv.png
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/Lose-py.png
+- Assets/ABRes/TxElement/Prefab/TxElementMananger.prefab
+- Assets/ABRes/TxElement/Texture/main/ad.png
+- Assets/ABRes/DifficultMachine/Texture/guanqia-hui.png
+- Assets/ABRes/ABResManager/Prefab/SpecialFragment_1.prefab
+- Assets/ABRes/DifficultMachine/Texture/DAILYCHALLENGE-py.png
+- Assets/ABRes/DifficultMachine/Texture/biaoti.png
+- Assets/ABRes/ItemFragment/Texture/x 1.png
+- Assets/ABRes/ABResManager/Texture/lan-di1.png
+- Assets/ABRes/TxElement/Texture/main/jindutiao.png
+- Assets/ABRes/TxElement/Texture/finalStep/yingbi.png
+- Assets/ABRes/ABResManager/Texture/cheng-di1.png
+- Assets/ABRes/ItemFragment/Texture/Ns2.png
+- Assets/ABRes/ABResManager/Model/sanxing/flip.prefab
+- Assets/ABRes/TxElement/Texture/TypeSelectPanel/xuanzhong.png
+- Assets/ABRes/ItemFragment/Texture/GalaxyZFlip7.png
+- Assets/ABRes/ABResManager/Model/iPhone/iPhone16p.fbx
+- Assets/ABRes/ItemFragment/Texture/Info.png
+- Assets/ABRes/TxElement/Texture/jinduPanel/yuandi.png
+- Assets/ABRes/DifficultMachine/Texture/guanqia.png
+- Assets/ABRes/TxElement/Prefab/TxElementYindaoPanel.prefab
+- Assets/ABRes/ItemFragment/Prefab/ItemFragmentPanel.prefab
+- Assets/ABRes/TxElement/Prefab/TxElementTypeSelectPanel.prefab
+- Assets/ABRes/ABResManager/Texture/diamondRerard.png
+- Assets/ABRes/TxElement/Texture/yindao/tubiao1.png
+- Assets/ABRes/ItemFragment/Texture/Shard-py.png
+- Assets/ABRes/TxElement/Texture/yindao/jiantou.png
+- Assets/ABRes/ItemFragment/Texture/jindutiao-di.png
+- Assets/ABRes/DifficultMachine/Texture/dangqian.png
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/Congrats!-py.png
+- Assets/ABRes/TxElement/Texture/guang1.png
+- Assets/ABRes/TxElement/Texture/yindao/tubiao2.png
+- Assets/ABRes/TxElement/Texture/History/didididi.png
+- Assets/ABRes/ABResManager/Texture/zi-di1.png
+- Assets/ABRes/ABResManager/Model/erji/Black.png
+- Assets/ABRes/ABResManager/Model/ps5/ps5-2.prefab
+- Assets/ABRes/ABResManager/Prefab/GoldPhysicMaterial_2.physicMaterial
+- Assets/ABRes/ABResManager/Model/sanxing/B_.png
+- Assets/ABRes/ABResManager/Model/NS/NS.mat
+- Assets/ABRes/ABResManager/Model/NS/Switch_Gray.png
+- Assets/ABRes/ABResManager/Model/NS/Switch_RB.fbx
+- Assets/ABRes/ABResManager/Model/iPhone/iPhone16p.prefab
+- Assets/ABRes/ItemFragment/Texture/Ps5.png
+- Assets/ABRes/TxElement/Texture/type/3.png
+- Assets/ABRes/DifficultMachine/Prefab/DifficultMachineNextLevelPanel.prefab
+- Assets/ABRes/ABResManager/Texture/lan-di2.png
+- Assets/ABRes/ABResManager/Model/Special_Diamond/moneystash.fbx
+- Assets/ABRes/ABResManager/Model/iPhone/White Titanium.png
+- Assets/ABRes/TxElement/Texture/yindao/yuan.png
+- Assets/ABRes/DifficultMachine/Texture/chaopiao-xiao.png
+- Assets/ABRes/TxElement/Texture/History/kong.png
+- Assets/ABRes/TxElement/Texture/type/4.png
+- Assets/ABRes/ABResManager/Model/iPhone/White Titanium.mat
+- Assets/ABRes/TxElement/Texture/finalStep/c.png
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/Lose.png
+- Assets/ABRes/ABResManager/Texture/diamondRerard-hui.png
+- Assets/ABRes/DifficultMachine/Texture/DAILYCHALLENGE.png
+- Assets/ABRes/TxElement/Prefab/TxElementJinDuPanel.prefab
+- Assets/ABRes/TxElement/Texture/yindao/tanchuang.png
+- Assets/ABRes/ItemFragment/Prefab/ItemFragmentPanelCell.prefab
+- Assets/ABRes/ABResManager/Model/ps5/PlayStation 4.mat
+- Assets/ABRes/ABResManager/Prefab/SpecialFragment_6.prefab
+- Assets/ABRes/ABResManager/Model/Quest3/HMD.prefab
+- Assets/ABRes/TxElement/Texture/main/guanbi.png
+- Assets/ABRes/ItemFragment/Texture/top.png
+- Assets/ABRes/TxElement/Texture/yindao/tubiao3.png
+- Assets/ABRes/ABResManager/Model/Quest3/hmd_matcap.mat
+- Assets/ABRes/ABResManager/Model/erji/SimpleHeadphones.fbx
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/Congrats!-huangguan.png
+- Assets/ABRes/TxElement/Texture/main/jindutiao-di.png
+- Assets/ABRes/ABResManager/Texture/cheng-di2.png
+- Assets/ABRes/ABResManager/Model/Special_Diamond/Special_DiamondCaizhi.mat
+- Assets/ABRes/ABResManager/Model/Special_Diamond/note_stash.png
+- Assets/ABRes/ABResManager/Model/Quest3/hmd.mat
+- Assets/ABRes/ItemFragment/Texture/IPhone16.png
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/jindutiao-di.png
+- Assets/ABRes/ABResManager/Model/ps5/xbox360.mat
+- Assets/ABRes/ABResManager/Model/NS/NS 2.mat
+- Assets/ABRes/TxElement/Texture/TypeSelectPanel/cuowu.png
+- Assets/ABRes/TxElement/Texture/type/6.png
+- Assets/ABRes/ABResManager/Prefab/GashaponItem_Special_Fragment.prefab
+- Assets/ABRes/ABResManager/Prefab/SpecialFragment_2.prefab
+- Assets/ABRes/ItemFragment/Texture/anniu-hui.png
+- Assets/ABRes/DifficultMachine/Texture/DAILYCHALLENGE-yn.png
+- Assets/ABRes/DifficultMachine/Texture/nextPanel/duihao.png
+- Assets/ABRes/ItemFragment/Texture/Sony1000xm5.png
+- Assets/ABRes/TxElement/Texture/main/jilu.png
+- Assets/ABRes/ABResManager/Model/NS/Switch_Controller_LightGray.png
+- Assets/ABRes/ABResManager/Prefab/GashaponItem_Special_Diamond.prefab
+Dependencies: []

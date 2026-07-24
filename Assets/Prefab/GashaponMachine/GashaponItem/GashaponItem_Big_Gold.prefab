@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &986818032598676265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3192750501124928524}
+  m_Layer: 0
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3192750501124928524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986818032598676265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7304165542420484320}
+  m_Father: {fileID: 925158856100260665}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3211594603046003848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 925158856100260665}
+  - component: {fileID: 5843973548167000693}
+  m_Layer: 0
+  m_Name: GashaponItem_Big_Gold
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &925158856100260665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3211594603046003848}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3192750501124928524}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5843973548167000693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3211594603046003848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70511f68a9a94434092a311700e6204f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  icon: {fileID: 5852957196962227803}
+  bg1: {fileID: 8072293380449144004}
+  bg2: {fileID: 4678084704316236418}
+--- !u!1001 &1398329618147405772
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3192750501124928524}
+    m_Modifications:
+    - target: {fileID: 1897147376454537080, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617004655511293415, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_Name
+      value: Gashapon_Big_Gold
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180714782670559691, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361216741149410691, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+--- !u!212 &4678084704316236418 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6020248519718227278, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+  m_PrefabInstance: {fileID: 1398329618147405772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &5852957196962227803 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4782326849276119447, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+  m_PrefabInstance: {fileID: 1398329618147405772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7304165542420484320 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8519199425104084780, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+  m_PrefabInstance: {fileID: 1398329618147405772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &8072293380449144004 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7161094417548174088, guid: 597a3a5868f28dd45a924a96edab468f, type: 3}
+  m_PrefabInstance: {fileID: 1398329618147405772}
+  m_PrefabAsset: {fileID: 0}

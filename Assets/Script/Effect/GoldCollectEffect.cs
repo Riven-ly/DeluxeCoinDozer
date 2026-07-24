@@ -1,0 +1,68 @@
+using DG.Tweening;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Reflection.Emit;
+using UnityEngine;
+
+public class GoldCollectEffect : MonoBehaviour
+{
+    public static GoldCollectEffect Instance;
+    public GameObject glodPrefab;
+    public GameObject diamondPrefab;
+    public int num;
+
+    private List<GoldFlyControl> golds = new List<GoldFlyControl>();
+    private List<GoldFlyControl> diamonds = new List<GoldFlyControl>();
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+    private void Start()
+    {
+        for (int i = 0; i < num; i++)
+        {
+            GameObject go = Instantiate(glodPrefab, transform);
+            go.transform.position = gameObject.transform.position;
+            GoldFlyControl cc = go.GetComponent<GoldFlyControl>();
+            if (cc != null)
+            {
+                cc.gameObject.SetActive(false);
+                golds.Add(cc);
+            }
+        }
+
+        for (int i = 0; i < num; i++)
+        {
+            GameObject go = Instantiate(diamondPrefab, transform);
+            go.transform.position = gameObject.transform.position;
+            GoldFlyControl cc = go.GetComponent<GoldFlyControl>();
+            if (cc != null)
+            {
+                cc.gameObject.SetActive(false);
+                diamonds.Add(cc);
+            }
+        }
+    }
+
+    public void StartEffect(ItemType itemType,Vector3 start, Vector3 target)
+    {
+        List<GoldFlyControl> temList = golds;
+        switch (itemType)
+        {
+            case ItemType.Gold:
+                temList = golds;
+                break;
+            case ItemType.Diamond:
+                temList = diamonds;
+                break;
+
+        }
+        for (int i = 0; i < num; i++)
+        {
+            temList[i].FlyGold(start, target,(i + 1)*0.1f);
+        }
+    }
+
+}

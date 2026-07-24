@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &564698916826779716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 956070888655411164}
+  m_Layer: 0
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &956070888655411164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564698916826779716}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2702251533142312335}
+  m_Father: {fileID: 3533084389552958385}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9149468900156230784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3533084389552958385}
+  - component: {fileID: 3859532434657977777}
+  m_Layer: 0
+  m_Name: GashaponItem_Machine_Vibration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3533084389552958385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9149468900156230784}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 956070888655411164}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3859532434657977777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9149468900156230784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70511f68a9a94434092a311700e6204f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 6
+  icon: {fileID: 7417038652071950329}
+  bg1: {fileID: 7747638093847978828}
+  bg2: {fileID: 4016039405143140757}
+--- !u!1001 &5676768735839416719
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 956070888655411164}
+    m_Modifications:
+    - target: {fileID: 3116644865513891708, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_Name
+      value: Gashapon_Machine_Vibration
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+--- !u!4 &2702251533142312335 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7730354429084546048, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+  m_PrefabInstance: {fileID: 5676768735839416719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4016039405143140757 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8753935104998856730, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+  m_PrefabInstance: {fileID: 5676768735839416719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7417038652071950329 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2893969914859046518, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+  m_PrefabInstance: {fileID: 5676768735839416719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7747638093847978828 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2684933567021552323, guid: 00ad80fa88ed7044fb290ed4e8a4398e, type: 3}
+  m_PrefabInstance: {fileID: 5676768735839416719}
+  m_PrefabAsset: {fileID: 0}

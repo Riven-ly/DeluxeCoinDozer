@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1020368876428527055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2749844095975804252}
+  m_Layer: 0
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2749844095975804252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020368876428527055}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4563392482785890542}
+  m_Father: {fileID: 3092565341880672155}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3586399311397487063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3092565341880672155}
+  - component: {fileID: 989967610504329490}
+  m_Layer: 0
+  m_Name: GashaponItem_Big_Gold_Rain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3092565341880672155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3586399311397487063}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2749844095975804252}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &989967610504329490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3586399311397487063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70511f68a9a94434092a311700e6204f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 7
+  icon: {fileID: 4769454937385495330}
+  bg1: {fileID: 874197371968086531}
+  bg2: {fileID: 4100330388109162682}
+--- !u!1001 &2061924340539151155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2749844095975804252}
+    m_Modifications:
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119570739421337861, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+      propertyPath: m_Name
+      value: Gashapon_Big_Gold_Rain
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+--- !u!212 &874197371968086531 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1206024220747608368, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+  m_PrefabInstance: {fileID: 2061924340539151155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4100330388109162682 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2628450166892211081, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+  m_PrefabInstance: {fileID: 2061924340539151155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4563392482785890542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2578592306151375837, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+  m_PrefabInstance: {fileID: 2061924340539151155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4769454937385495330 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6822369309923817489, guid: e35be452faf0adb4f802e83c5d46f79a, type: 3}
+  m_PrefabInstance: {fileID: 2061924340539151155}
+  m_PrefabAsset: {fileID: 0}

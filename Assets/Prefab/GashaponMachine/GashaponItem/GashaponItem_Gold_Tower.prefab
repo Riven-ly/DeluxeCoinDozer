@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2550351551107125524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2268691590874618951}
+  - component: {fileID: 6648449129888182319}
+  m_Layer: 0
+  m_Name: GashaponItem_Gold_Tower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2268691590874618951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550351551107125524}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1578157241318972221}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6648449129888182319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550351551107125524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70511f68a9a94434092a311700e6204f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 5
+  icon: {fileID: 405011274423187727}
+  bg1: {fileID: 4546025802434653829}
+  bg2: {fileID: 8462106055038819709}
+--- !u!1 &5307993303698155487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1578157241318972221}
+  m_Layer: 0
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1578157241318972221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5307993303698155487}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7572021901132879951}
+  m_Father: {fileID: 2268691590874618951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6257757826594077649
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1578157241318972221}
+    m_Modifications:
+    - target: {fileID: 1857790352926437407, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_Name
+      value: Gashapon_Gold_Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+--- !u!212 &405011274423187727 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6000736497807573726, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+  m_PrefabInstance: {fileID: 6257757826594077649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4546025802434653829 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7624242287793395028, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+  m_PrefabInstance: {fileID: 6257757826594077649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7572021901132879951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4597397158705996702, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+  m_PrefabInstance: {fileID: 6257757826594077649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &8462106055038819709 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2573654397586908844, guid: 66b773f1757f9f449b02bf190fc675b7, type: 3}
+  m_PrefabInstance: {fileID: 6257757826594077649}
+  m_PrefabAsset: {fileID: 0}

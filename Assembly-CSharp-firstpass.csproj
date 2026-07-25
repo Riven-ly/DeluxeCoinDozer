@@ -75,6 +75,7 @@
     <None Include="Assets\Plugins\SolarEngine\MiniGame\SolarEngineUnityTool.dll" />
     <None Include="Assets\Plugins\SolarEngine\MiniGame\SolarEngineMiniGames.dll" />
     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.dll" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\SolarEngine\Android\proguard-user.txt" />
     <None Include="Assets\Plugins\SolarEngine\Thrid\Newtonsoft.Json.dll" />
     <None Include="Assets\Plugins\SolarEngine\MiniGame\MiniGameRemoteConfig.dll" />

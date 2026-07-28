@@ -140,10 +140,10 @@ public class SettingPanel : UIBase
     
     public static void OpenPrivacyPolicy()
     {
-        Application.OpenURL("https://deluxecoindozer.org/privacy");
+        Application.OpenURL("https://sites.google.com/view/deluxe-coin-dozer-privacy");
     }
     public static void OpenTermsOfServic()
     {
-        Application.OpenURL("https://deluxecoindozer.org/terms");
+        Application.OpenURL("https://sites.google.com/view/deluxe-coin-dozer-term");
     }
 }

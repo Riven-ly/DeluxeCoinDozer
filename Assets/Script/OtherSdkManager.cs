@@ -12,6 +12,7 @@ public class OtherSdkManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Init();
     }
 
 
@@ -35,7 +36,13 @@ public class OtherSdkManager : MonoBehaviour
     private void SolarEngineInit()
     {
         string AppKey = "65917ddcfdf8d4e2";
+
+        SolarEngine.Analytics.preInitSeSdk(AppKey);
         SEConfig seConfig = new SEConfig();
+        seConfig.initCompletedCallback = (e) =>
+        {
+            Debug.Log("SolarEngineInit :" + e);
+        };
         SolarEngine.Analytics.initSeSdk(AppKey, seConfig);
     }
 }

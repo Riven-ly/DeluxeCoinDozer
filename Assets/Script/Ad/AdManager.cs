@@ -15,6 +15,7 @@ public class AdManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Init();
     }
 
     public void Init()
@@ -30,7 +31,6 @@ public class AdManager : MonoBehaviour
         string decryptedSdkKey = EncryptSDKKey.DecryptWithRandomSalt(SDK_key);
         //Debug.Log("解密结果（还原原值）：" + decryptedSdkKey);
         MaxSdk.SetSdkKey(decryptedSdkKey);
-        MaxSdk.SetUserId(GameApiConfig.ClientUUID);
         MaxSdk.InitializeSdk();
     }
 

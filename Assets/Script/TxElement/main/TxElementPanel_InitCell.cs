@@ -29,12 +29,7 @@ public class TxElementPanel_InitCell : MonoBehaviour
                     RreatNewOrder();
                 });
 
-                CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                {
-                    page_id = "TXPanel",
-                    name = "Event_TXClick",
-                    value = TxElementMananger.Instance.info.initInfo.diamond.ToString(),
-                });
+                OtherSdkManager.Instance.CustomEvent("Event_WithdrawClick", "value", TxElementMananger.Instance.info.initInfo.diamond.ToString());
             }
 
         });
@@ -77,11 +72,7 @@ public class TxElementPanel_InitCell : MonoBehaviour
         TxElementMananger.Instance.SaveElementManangerInfo();
         UIManager.Instance.GetUI<TxElementPanel>().RefreshPanel();
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "TXPanel",
-            name = "Event_TXStatus",
-            value = " reviewing",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_WithdrawStatus", "Status", "reviewing");
+
     }
 }

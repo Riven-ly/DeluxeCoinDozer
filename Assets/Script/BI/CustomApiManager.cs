@@ -1,9 +1,4 @@
-using Newtonsoft.Json;
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public class CustomApiManager : MonoBehaviour
@@ -21,9 +16,17 @@ public class CustomApiManager : MonoBehaviour
     /// </summary>
     public void RequestCustomEventV2(CustomEventData data)
     {
-       // string valueStr = data.value;
-       // data.value = $@"{{""value"":""{valueStr}""}}";
+        // string valueStr = data.value;
+        // data.value = $@"{{""value"":""{valueStr}""}}";
+
+        if (!OtherSdkManager.IsInit)
+            return;
+
+        Dictionary<string, object> customAttributes = new Dictionary<string, object>();
+        customAttributes.Add(data.name, data.value);
+        SolarEngine.Analytics.track(data.name, customAttributes);
     }
+
 }
 
 public class CustomEventData

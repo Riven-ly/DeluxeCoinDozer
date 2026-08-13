@@ -23,12 +23,8 @@ public class FlotageBalloon : MonoBehaviour
             AudioManager.Instance.PlayBtnMusic();
             UIManager.Instance.OpenUI<FlotageBalloonPanel>();
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "FlotageBalloon",
-                name = "Event_BubbleClick",
-                value = "",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_BubbleClick");
+
         });
 
         isStartEnterLimit = GameManager.Instance.playerInfo.playerData.level >= 3;

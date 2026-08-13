@@ -28,12 +28,7 @@ public class ItemFragmentTipsPanel : UIBase
         IndonesianTipText.SetActive(LanguageManager.Instance.type == MultilingualType.Indonesian);
         PortugueseTipText.SetActive(LanguageManager.Instance.type == MultilingualType.Portuguese);
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "ShardInfoPanel",
-            name = "Event_ShardInfoOpen",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_ShardInfoOpen");
 
     }
     public override void Hide()

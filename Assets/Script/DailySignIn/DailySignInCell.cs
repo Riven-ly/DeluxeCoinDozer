@@ -27,21 +27,11 @@ public class DailySignInCell : MonoBehaviour
         {
             SignIn();
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "DailySignInPanel",
-                name = "Event_SignOpen",
-                value = $"day :{day}",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_SignClick", "day", day);
 
             if(day == 7)
             {
-                CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                {
-                    page_id = "DailySignInPanel",
-                    name = "Event_SignComplete",
-                    value = $"day :{day}",
-                });
+                OtherSdkManager.Instance.CustomEvent("Event_SignComplete");
             }
         });
     }
@@ -126,12 +116,6 @@ public class DailySignInCell : MonoBehaviour
             }
         }
 
-
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "GoldGain",
-            name = "Event_GoldGain",
-            value = "sign_in",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "sign_in");
     }
 }

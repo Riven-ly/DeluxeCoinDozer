@@ -26,6 +26,7 @@ public class CardGamePanel : UIBase
             GetReward();
             Hide();
 
+            OtherSdkManager.Instance.CustomEvent("Event_AD_Interstitial", "type", "Card");
             AdManager.Instance.OnClickInterstitialAd(page_id, true);
         });
     }
@@ -62,12 +63,7 @@ public class CardGamePanel : UIBase
 
         rewardAdButton.Init(AdRewardCallback, page_id, UnityEngine.Random.Range(0, 2) == 1);
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "Card_Game",
-            name = "Event_Card",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_Card");
     }
     public override void Hide()
     {
@@ -121,12 +117,7 @@ public class CardGamePanel : UIBase
             item.GetItemReward();
         }
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "GoldGain",
-            name = "Event_GoldGain",
-            value = "minigame_card",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "minigame_card");
 
         //UIManager.Instance.OpenUI<GeneralRewardsPanel>(itemDatas, () =>
         //{
@@ -153,12 +144,7 @@ public class CardGamePanel : UIBase
         GetReward();
         Hide();
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "Card_Game",
-            name = "Event_CardAD",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_CardAD");
     }
 
     public int GetRandomItemByWeight()

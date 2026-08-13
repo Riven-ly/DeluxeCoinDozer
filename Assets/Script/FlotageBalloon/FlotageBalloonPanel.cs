@@ -22,6 +22,7 @@ public class FlotageBalloonPanel : UIBase
         {
             AudioManager.Instance.PlayBtnMusic();
             Hide();
+            OtherSdkManager.Instance.CustomEvent("Event_AD_Interstitial", "type", "Bubble");
             AdManager.Instance.OnClickInterstitialAd(page_id, true);
         });
     }
@@ -90,19 +91,10 @@ public class FlotageBalloonPanel : UIBase
         };
         Hide();
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "GoldGain",
-            name = "Event_GoldGain",
-            value = "bubble",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "bubble");
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "FlotageBalloon",
-            name = "Event_BubbleOpenAD",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_BubbleOpenAD");
+
     }
 
     //private void AdRewardCallback()

@@ -134,12 +134,7 @@ public class GashaponMachine : MonoBehaviour,IEventListener
             return;
         }
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "GashaponMachine",
-            name = "Event_SlotResult",
-            value = targetType.ToString(),
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_SlotResult","ID", targetType.ToString());
 
         targetItem.transform.localPosition = new Vector3(0f, 0.048f, 0f);
         targetItem.transform.localScale = Vector3.zero;

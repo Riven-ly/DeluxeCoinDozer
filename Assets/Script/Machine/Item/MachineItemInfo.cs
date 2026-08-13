@@ -82,12 +82,7 @@ public class MachineItemInfo : MonoBehaviour
             UIManager.Instance.CreatMachineItemUIEffect(objPos, str);
             //UIManager.Instance.CreatMachineItemUIEffect2(objPos, str);
 
-            //CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            //{
-            //    page_id = "GoldGain",
-            //    name = "Event_GoldGain",
-            //    value = "pusher_gain",
-            //});
+            //OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "pusher_gain");
         }
         MachineItemUIEffect2.Instance.PlayEffect(machineItemType);
     }

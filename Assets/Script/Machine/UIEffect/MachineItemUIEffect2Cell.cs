@@ -30,12 +30,7 @@ public class MachineItemUIEffect2Cell : MonoBehaviour
 
         if(count >= 5)
         {
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "ComboMania",
-                name = "Event_ComboStatus",
-                value = "ComboMania",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_ComboStatus", "type", "ComboMania");
         }
 
         transform.localPosition = new Vector3(transform.localPosition.x, 0, 0);

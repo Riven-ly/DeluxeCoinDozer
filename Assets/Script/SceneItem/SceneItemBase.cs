@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using static SolarEngine.MiniGames.Utils.SESDKTool4MiniGames;
 
 
 public enum SceneItemType
@@ -110,12 +111,7 @@ public class SceneItemBase : MonoBehaviour
         AudioManager.Instance.PlaySceneSingleMusic("UseItem");
         EventManager.Instance.TriggerEvent(GameEvent.UseSceneItem, type);
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "UseItem",
-            name = "Event_UseItem",
-            value = type.ToString(),
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_UseItem", "type", type.ToString());
     }
 
     public void SetBtnAction(bool _bool)

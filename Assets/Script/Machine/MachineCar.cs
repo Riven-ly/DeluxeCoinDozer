@@ -49,12 +49,7 @@ public class MachineCar : MonoBehaviour
             Debug.Log("¿ªÊ¼Gachapon");
             EventManager.Instance.TriggerEvent(GameEvent.SpinGachapon);
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "MachineCar",
-                name = "Event_SlotTrigger",
-                value = "",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_SlotTrigger");
 
         }
 

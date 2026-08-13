@@ -25,6 +25,7 @@ public class GetSceneItemPanel : UIBase
             AudioManager.Instance.PlayBtnMusic();
             Hide();
 
+            OtherSdkManager.Instance.CustomEvent("Event_AD_Interstitial", "type", "UseItem");
             AdManager.Instance.OnClickInterstitialAd("GetSceneItemPanel", true);
         });
     }
@@ -53,12 +54,7 @@ public class GetSceneItemPanel : UIBase
 
         Action AdRewardCallback = () =>
         {
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = page_id + info.type.ToString(),
-                name = "Event_UseItemID",
-                value = info.type.ToString(),
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_UseItemID", "type", info.type.ToString());
 
             callback = info.clickCallback;
             Hide();

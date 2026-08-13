@@ -96,12 +96,7 @@ public class TxElementTypeSelectPanel : UIBase
                 UIManager.Instance.GetUI<TxElementPanel>().UpdateAccountTypeIcon();
                 Hide();
 
-                CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                {
-                    page_id = "TXPanel",
-                    name = "Event_TXPPAdd",
-                    value = "",
-                });
+                OtherSdkManager.Instance.CustomEvent("Event_PaypalAdd");
             }
             else
             {

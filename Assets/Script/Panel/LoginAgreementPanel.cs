@@ -27,12 +27,7 @@ public class LoginAgreementPanel : UIBase
             PlayerPrefs.SetString("LoginAgreementPanel", "YES");
             Hide();
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "LoginAgreement",
-                name = "Event_AgreementAccept",
-                value = "",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_AgreementAccept");
         });
         TermsofService.onClick.AddListener(() =>
         {
@@ -67,12 +62,8 @@ public class LoginAgreementPanel : UIBase
         explain.gameObject.SetActive(LanguageManager.Instance.type == MultilingualType.English);
         explain_p.gameObject.SetActive(LanguageManager.Instance.type == MultilingualType.Portuguese);
         explain_in.gameObject.SetActive(LanguageManager.Instance.type == MultilingualType.Indonesian);
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "LoginAgreement",
-            name = "Event_AgreementShow",
-            value = "",
-        });
+
+        OtherSdkManager.Instance.CustomEvent("Event_AgreementShow");
     }
     public override void Hide()
     {

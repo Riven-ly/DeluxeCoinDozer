@@ -8,12 +8,8 @@ public class PRgamePanel : UIBase
     {
         base.Refresh(data);
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "VerifyPanel",
-            name = "Event_VerifyShow",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_VerifyShow");
+       
     }
     public override void Hide()
     {
@@ -38,24 +34,16 @@ public class PRgamePanel : UIBase
                 Hide();
             });
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "VerifyPanel",
-                name = "Event_VerifySuccess",
-                value = "",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_VerifySuccess");
+
         }
         else
         {
             PRgameManager.Instance.SaveGameYanzhengResult(false);
             Hide();
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "VerifyPanel",
-                name = "Event_VerifyFail",
-                value = "",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_VerifyFail");
+
         }
     }
 }

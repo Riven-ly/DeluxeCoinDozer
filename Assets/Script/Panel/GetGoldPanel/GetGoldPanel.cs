@@ -63,19 +63,16 @@ public class GetGoldPanel : UIBase
             SaveGetGoldPanelData();
             UpdateFreeGoldState();
 
+            OtherSdkManager.Instance.CustomEvent("Event_AD_Interstitial", "type", "FreeCoins");
             AdManager.Instance.OnClickInterstitialAd(page_id, true);
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "GoldGain",
-                name = "Event_GoldGain",
-                value = "store_free",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "store_free");
         });
 
         hideBtn.onClick.AddListener(() =>
         {
             AudioManager.Instance.PlayBtnMusic();
             Hide();
+            OtherSdkManager.Instance.CustomEvent("Event_AD_Interstitial", "type", "Fail");
             AdManager.Instance.OnClickInterstitialAd(page_id, true);
         });
 
@@ -146,12 +143,8 @@ public class GetGoldPanel : UIBase
             rewardAdButton.Init(AdRewardCallback, page_id);
         });
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "GoldGain",
-            name = "Event_GoldGain",
-            value = "store_ad",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "store_ad");
+
     }
 
     private void UpdateFreeGoldState()

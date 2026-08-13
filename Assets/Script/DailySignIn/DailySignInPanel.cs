@@ -51,12 +51,7 @@ public class DailySignInPanel : UIBase
         dailySignInCells[curDayIndex].effectRoot.gameObject.SetActive(!isTodaySignIn);
         dailySignInCells[curDayIndex].IsToday(true);
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "DailySignInPanel",
-            name = "Event_SignOpen",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_SignOpen");
     }
     public override void Hide()
     {

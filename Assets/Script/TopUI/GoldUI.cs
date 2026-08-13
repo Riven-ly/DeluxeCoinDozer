@@ -55,12 +55,7 @@ public class GoldUI : MonoBehaviour
                     slider.value = 0f;
                     EventManager.Instance.TriggerEvent(GameEvent.GetGold, 1);
 
-                    CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                    {
-                        page_id = "GoldGain",
-                        name = "Event_GoldGain",
-                        value = "auto_recover",
-                    });
+                    OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "auto_recover");
                 });
             }
         }

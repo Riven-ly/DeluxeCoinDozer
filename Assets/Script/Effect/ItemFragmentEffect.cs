@@ -85,12 +85,7 @@ public class ItemFragmentEffect : MonoBehaviour
                             listdata.Add(false);
 
                             UIManager.Instance.OpenUI<GameMainBtnYindaoPanel>(listdata);
-                            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                            {
-                                page_id = "Yindao",
-                                name = "Event_GuideStep",
-                                value = "step3",
-                            });
+                            OtherSdkManager.Instance.CustomEvent("Event_GuideStep","step", 3);
                         }
           
                     });

@@ -21,35 +21,21 @@ public class EvaluationGamePanel : UIBase
             AudioManager.Instance.PlayBtnMusic();
             Hide();
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "EvaluationGame",
-                name = "Event_Rate_Not",
-                value = "",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_Rate_Not");
         });
         btn2.onClick.AddListener(() =>
         {
             AudioManager.Instance.PlayBtnMusic();
             bg1.gameObject.SetActive(false);
             bg2.gameObject.SetActive(true);
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "EvaluationGame",
-                name = "Event_Rate_Love",
-                value = "",
-            });
+
+            OtherSdkManager.Instance.CustomEvent("Event_Rate_Love");
         });
         btn3.onClick.AddListener(() =>
         {
             AudioManager.Instance.PlayBtnMusic();
             Hide();
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "EvaluationGame",
-                name = "Event_Rate_Not",
-                value = "",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_Rate_Not");
         });
         btn4.onClick.AddListener(() =>
         {
@@ -57,21 +43,10 @@ public class EvaluationGamePanel : UIBase
             PlayerPrefs.SetInt("EvaluationGameStar", 5);
             callback = () =>
             {
-                CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                {
-                    page_id = "EvaluationGame",
-                    name = "Event_Rate_5Stars",
-                    value = "",
-                });
+                OtherSdkManager.Instance.CustomEvent("Event_Rate_5Stars");
                 PingJiaTiaoZhuan();
             };
             Hide();
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "EvaluationGame",
-                name = "Event_Rate_Love",
-                value = "",
-            });
         });
     }
 
@@ -81,13 +56,7 @@ public class EvaluationGamePanel : UIBase
         bg1.gameObject.SetActive(true);
         bg2.gameObject.SetActive(false);
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "EvaluationGame",
-            name = "Event_RatePopup",
-            value = "",
-        });
-
+        OtherSdkManager.Instance.CustomEvent("Event_RatePopup");
     }
     public override void Hide()
     {

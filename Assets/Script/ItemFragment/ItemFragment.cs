@@ -68,12 +68,29 @@ public class ItemFragment : MonoBehaviour,IEventListener
                     info.cnt = Mathf.Clamp(info.cnt, 0, limitFragmentMax);
                     SaveitemFragmentInfos();
 
-                    CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
+                    string strname = info.type.ToString();
+                    switch (info.type)
                     {
-                        page_id = "GameShard",
-                        name = "Event_ShardNum",
-                        value = $"type:{info.type.ToString()},count :{info.cnt}",
-                    });
+                        case MachineItemType.SpecialFragment_1:
+                            strname = "IPhone16";
+                            break;
+                        case MachineItemType.SpecialFragment_2:
+                            strname = "GalaxyZFlip7";
+                            break;
+                        case MachineItemType.SpecialFragment_3:
+                            strname = "Sony1000xm5";
+                            break;
+                        case MachineItemType.SpecialFragment_4:
+                            strname = "Quest3";
+                            break;
+                        case MachineItemType.SpecialFragment_5:
+                            strname = "Ps5";
+                            break;
+                        case MachineItemType.SpecialFragment_6:
+                            strname = "Ns2";
+                            break;
+                    }
+                    OtherSdkManager.Instance.CustomEvent("Event_ShardNum", "type", strname);
                     break;
                 }
             }

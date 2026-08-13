@@ -65,13 +65,7 @@ public class DropGamePanel : UIBase
             .AppendInterval(1f)
             .SetLoops(10);
 
-
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "Drop_Game",
-            name = "Event_Drop",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_Drop");
     }
     public override void Hide()
     {
@@ -114,28 +108,19 @@ public class DropGamePanel : UIBase
                 {
                     item.GetItemReward();
 
-                    CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                    {
-                        page_id = "Drop_Game",
-                        name = "Event_DropAD",
-                        value = "",
-                    });
+                    OtherSdkManager.Instance.CustomEvent("Event_DropAD");
                 }
                 else
                 {
+                    OtherSdkManager.Instance.CustomEvent("Event_AD_Interstitial", "type", "Drop");
                     AdManager.Instance.OnClickInterstitialAd("Drop_Game", true);
                 }
             }
             Hide();
         });
 
+        OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "minigame_catch");
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "GoldGain",
-            name = "Event_GoldGain",
-            value = "minigame_catch",
-        });
     }
     private void CreatItem()
     {

@@ -58,12 +58,7 @@ public class DifficultMachine : MachineBase,IEventListener
 
         AudioManager.Instance.PlayBGM("BGM2");
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "Daily Challenge",
-            name = "Event_HardStart",
-            value = $"stage :{curLv}",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_HardStart", "stage", curLv);
     }
 
     public void InitGameInfo()
@@ -114,12 +109,7 @@ public class DifficultMachine : MachineBase,IEventListener
                 GameExit();
             });
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "Daily Challenge",
-                name = "Event_HardFail",
-                value = $"stage :{curLv}",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_HardFail", "stage", curLv);
         }
     }
 
@@ -153,19 +143,9 @@ public class DifficultMachine : MachineBase,IEventListener
                 }
             }
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "Daily Challenge",
-                name = "Event_HardSuccess",
-                value = $"stage :{curLv}",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_HardSuccess", "stage", curLv);
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "GoldGain",
-                name = "Event_GoldGain",
-                value = "hard_mode_reward",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "hard_mode_reward");
 
             curLv++;
             if (curLv >= 5)

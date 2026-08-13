@@ -134,13 +134,8 @@ public class GameTaskPanel : UIBase
         }
         gachaponTaskCells.verticalNormalizedPosition = 1f;
 
+        OtherSdkManager.Instance.CustomEvent("Event_TaskOpen");
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "GameTaskPanel",
-            name = "Event_TaskOpen",
-            value = "",
-        });
     }
     public override void Hide()
     {

@@ -57,12 +57,8 @@ public class PlayerInfo
             Debug.Log("Éý¼¶:" + playerData.level);
             EventManager.Instance.TriggerEvent(GameEvent.LevelUp);
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "LevelUp",
-                name = "Event_LevelUp",
-                value = playerData.level.ToString(),
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_LevelUp", "level", playerData.level);
+        
         }
     }
     public LevelConfigData GetLevelConfigData(int level = -1)

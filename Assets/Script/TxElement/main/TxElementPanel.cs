@@ -55,12 +55,7 @@ public class TxElementPanel : UIBase
         UpdateAccountTypeIcon();
         RefreshPanel();
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "TXPanel",
-            name = "Event_TXOpen",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_WithDrawOpen");
     }
 
     public void RefreshPanel()

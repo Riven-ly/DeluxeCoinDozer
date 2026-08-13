@@ -45,19 +45,9 @@ public class GameTaskCell : MonoBehaviour
                 EventManager.Instance.TriggerEvent(GameEvent.GetGold, (int)gameTaskInfo.reward);
             });
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "GameTaskPanel",
-                name = "Event_TaskClaim",
-                value = $"{gameTaskInfo.gameTaskType.ToString()}",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_TaskClaim", "ID", gameTaskInfo.gameTaskType.ToString());
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "GoldGain",
-                name = "Event_GoldGain",
-                value = "task_daily",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "task_daily");
         });
     }
 

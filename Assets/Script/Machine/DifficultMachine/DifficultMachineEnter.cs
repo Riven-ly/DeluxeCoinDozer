@@ -27,12 +27,8 @@ public class DifficultMachineEnter : MonoBehaviour, IEventListener
             UIManager.Instance.OpenUI<DifficultMachineEnterPanel>();
             PlayerPrefs.SetString("DifficultMachineEnterYindao", "YES");
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "Daily Challenge",
-                name = "Event_HardEntry",
-                value = "",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_HardEntry");
+         
         });
     }
 
@@ -60,12 +56,7 @@ public class DifficultMachineEnter : MonoBehaviour, IEventListener
 
                 UIManager.Instance.OpenUI<GameMainBtnYindaoPanel>(listdata);
 
-                CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                {
-                    page_id = "Yindao",
-                    name = "Event_GuideStep",
-                    value = "step2",
-                });
+                OtherSdkManager.Instance.CustomEvent("Event_GuideStep", "step", 2);
             };
         }
     }

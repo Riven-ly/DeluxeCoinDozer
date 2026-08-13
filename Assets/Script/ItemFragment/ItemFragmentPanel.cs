@@ -48,12 +48,7 @@ public class ItemFragmentPanel : UIBase
         }
         scrollRect.verticalNormalizedPosition = 1f;
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "ShardPanel",
-            name = "Event_ShardOpen",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_ShardOpen");
     }
     public override void Hide()
     {

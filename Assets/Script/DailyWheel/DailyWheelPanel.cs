@@ -30,13 +30,7 @@ public class DailyWheelPanel : UIBase
             dailyBtncanvasGroup.alpha =  0.5f;
             DailyWheel.DailyWheelRecord();
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = page_id,
-                name = "Event_WheelStart",
-                value = "",
-            });
-
+            OtherSdkManager.Instance.CustomEvent("Event_WheelStart");
             SpinWheel();
         });
 
@@ -74,12 +68,7 @@ public class DailyWheelPanel : UIBase
         rewardAdButton.Init(AdRewardCallback, page_id, UnityEngine.Random.Range(0, 2) == 1);
         CheckBtnState();
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = page_id,
-            name = "Event_WheelOpen",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_WheelOpen");
     }
     public override void Hide()
     {
@@ -148,29 +137,14 @@ public class DailyWheelPanel : UIBase
                     rewardAdButton.Init(AdRewardCallback, page_id, UnityEngine.Random.Range(0, 2) == 1);
                 });
 
-                CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                {
-                    page_id = "GoldGain",
-                    name = "Event_GoldGain",
-                    value = "wheel",
-                });
+                OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "wheel");
 
-                CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                {
-                    page_id = page_id,
-                    name = "Event_WheelReward",
-                    value = $"type :{itemDatas[targetIndex].itemType.ToString()}, count :{itemDatas[targetIndex].count}",
-                });
+                OtherSdkManager.Instance.CustomEvent("Event_WheelReward", "ID", targetIndex);
             });
     }
     private void AdRewardCallback()
     {
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = page_id,
-            name = "Event_WheelAD",
-            value = "",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_WheelAD");
 
         SpinWheel();
     }

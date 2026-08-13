@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5835502707124906662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2310694511314213536}
+  - component: {fileID: 6149553721216687377}
+  m_Layer: 0
+  m_Name: ABResManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2310694511314213536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835502707124906662}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6149553721216687377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835502707124906662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6263878e350d14681234183b78826e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txElementManangerPrefab: {fileID: 8178345401660826325, guid: 769b95813c2ac9f4e8ece9bdf7c9da03, type: 3}
+  itemFragmentPrefab: {fileID: 2523816717584499018, guid: 4ff782f9e1e5aef47b95ef949646ed3f, type: 3}
+  difficultMachineEnterPrefab: {fileID: 2523816717584499018, guid: cd7a04d32860c024ab6ed3ad1116dc9e, type: 3}
+  TxElementBtnPrefab: {fileID: 2523816717584499018, guid: c9d92b173c8b1174ca98b598539b6993, type: 3}
+  gashaponItem_Special_Diamond_Prefab: {fileID: 3211594603046003848, guid: e3de193172db9284296510bbc76d1797, type: 3}
+  gashaponItem_Special_Fragment_Prefab: {fileID: 3211594603046003848, guid: a71a29be6111e7e43bf5adda46a6dd96, type: 3}
+  diamondsSprite: {fileID: 21300000, guid: 3d1ca2ff2517f994d9a8e5e7abf66c22, type: 3}
+  diamondRerardIconsSprite: {fileID: 21300000, guid: 2688d12b28fd33d409ba7dc4080acdab, type: 3}
+  PrefabList:
+  - Key: 3
+    value: {fileID: 1279315507657957898, guid: 5e9f59c616f87c640a9885ebf0576efe, type: 3}
+  - Key: 4
+    value: {fileID: 3665065455267193563, guid: f6aa61dc2a120ea4185bae39aa1a7ab7, type: 3}
+  - Key: 5
+    value: {fileID: 2667379759770447801, guid: e3bf410e82e41d94fb7230d39f6654be, type: 3}
+  - Key: 6
+    value: {fileID: 213772886138375868, guid: 90335ea1aa00f1a47b6b8d700448e79e, type: 3}
+  - Key: 7
+    value: {fileID: 4139476373665192358, guid: ae62eb86ccb800044aaf344189116d5e, type: 3}
+  - Key: 8
+    value: {fileID: 2148031959533705457, guid: 3b1af252538bec4429aefd04a329766a, type: 3}
+  - Key: 9
+    value: {fileID: 8017023425030062836, guid: ed52ccde308fa4d46bed475377c7f5e0, type: 3}
+  uiPanel:
+  - {fileID: 4313530988643031291, guid: ff5b3bc54f18b4746b489a2e0cd13cfb, type: 3}
+  - {fileID: 4313530988643031291, guid: 0d3aa4d04f8d51a41840ec0182e3d086, type: 3}
+  - {fileID: 386459409739154570, guid: 099332d786cf9594a80d93e808c7ab33, type: 3}
+  - {fileID: 2102623158425674530, guid: 76ffe27a9a138f94596f8c1b2e71bdf4, type: 3}
+  - {fileID: 7237729529767481337, guid: 246b2b355d91b984ca18b00e052edffb, type: 3}
+  - {fileID: 8637627191267277486, guid: 5fb51cf83d9d4c544a3865ee7560bb5a, type: 3}
+  - {fileID: 7954863248001179968, guid: 8386fded18a5c7a4c8505ae4f6b8be54, type: 3}
+  - {fileID: 4993292942913188526, guid: 5effbd3cdc43c134ea9c7e739b5cc353, type: 3}
+  - {fileID: 1527328196549079849, guid: a47bb3fbcb159054a91829e17ee75bc3, type: 3}
+  - {fileID: 1763507167882703587, guid: be23d7e77c14e27459a2d42d3e62cade, type: 3}
+  - {fileID: 7954863248001179968, guid: 1fda54df4a5a66b4b94ac216fcf28421, type: 3}

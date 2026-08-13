@@ -69,12 +69,7 @@ public class TxElementMananger : MonoBehaviour,IEventListener
 
         SaveElementManangerInfo();
 
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "TXPanel",
-            name = "Event_TXStatus",
-            value = " failed",
-        });
+        OtherSdkManager.Instance.CustomEvent("Event_WithdrawStatus", "Status", "failed");
     }
     //检查是否可以掉落字母
     public bool CheckIsCanDropLetter()

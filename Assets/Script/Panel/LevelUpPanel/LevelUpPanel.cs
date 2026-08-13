@@ -21,13 +21,9 @@ public class LevelUpPanel : UIBase
             AudioManager.Instance.PlayBtnMusic();
             GetReward();
             Hide();
+            OtherSdkManager.Instance.CustomEvent("Event_AD_Interstitial", "type", "LevelSuccess");
             AdManager.Instance.OnClickInterstitialAd(page_id, true);
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "GoldGain",
-                name = "Event_GoldGain",
-                value = "level_up",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "level_up");
         });
     }
     public override void Refresh(object data = null)
@@ -74,12 +70,8 @@ public class LevelUpPanel : UIBase
                     UIManager.Instance.OpenUI<GameMainBtnYindaoPanel>(listdata);
                 });
 
-            CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-            {
-                page_id = "Yindao",
-                name = "Event_GuideStep",
-                value = "step1",
-            });
+            OtherSdkManager.Instance.CustomEvent("Event_GuideStep", "step", 1);
+
         }
     }
 
@@ -94,11 +86,7 @@ public class LevelUpPanel : UIBase
         GetReward();
         GetReward();
         Hide();
-        CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-        {
-            page_id = "GoldGain",
-            name = "Event_GoldGain",
-            value = "level_up",
-        });
+   
+        OtherSdkManager.Instance.CustomEvent("Event_GoldGain", "source", "level_up");
     }
 }

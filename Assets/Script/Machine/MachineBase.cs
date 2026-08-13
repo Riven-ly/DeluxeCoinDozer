@@ -82,16 +82,12 @@ public class MachineBase : MonoBehaviour
             {
                 if (GetGold() < 1)
                 {
-                    CustomApiManager.Instance.RequestCustomEventV2(new CustomEventData()
-                    {
-                        page_id = this.cur_page_id,
-                        name = "Event_OutOfCoins",
-                        value = "",
-                    });
+                    OtherSdkManager.Instance.CustomEvent("Event_OutOfCoins");
                     UIManager.Instance.OpenUI<GetGoldPanel>();
                 }
                 else
                 {
+                    //OtherSdkManager.Instance.CustomEvent("Event_CoinDrop");
                     //Debug.Log("成功点击到触发器区域");
                     //Debug.DrawLine(ray.origin, hitInfo.point, Color.red, 1000);
                     EventManager.Instance.TriggerEvent(GameEvent.CreatMachineItem);

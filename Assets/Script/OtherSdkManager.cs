@@ -12,7 +12,7 @@ public class OtherSdkManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        Init();
+        //Init();
     }
 
 

@@ -15,7 +15,7 @@ public class AdManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        Init();
+        //Init();
     }
 
     public void Init()
